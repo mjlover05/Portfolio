@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#originalArray {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#arrayContainer {
+    display: flex;
+    align-items: flex-end; /* Align bars at the bottom */
+    margin: 20px 0;
+    border: 2px solid #333; /* Increased border around the visualizer */
+    padding: 10px;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.bar {
+    width: 30px;
+    display: inline-block;
+    margin: 0 2px;
+    position: relative;
+    background-color: lightblue; /* Bar color */
+    transition: height 0.3s;
+}
+
+.bar-value {
+    position: absolute;
+    bottom: 0; /* Position inside the bar */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: purple; /* Change text color to purple */
+    font-weight: bold;
+}
+
+.controls {
+    margin: 10px 0;
+}
+
+button {
+    margin: 5px; /* Margin around buttons */
+    padding: 10px 15px; /* Padding for buttons */
+    border: 2px solid #333; /* Border around buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+input[type="number"],
+input[type="range"] {
+    margin: 5px; /* Margin around inputs */
+    padding: 5px; /* Padding for inputs */
+    border: 1px solid #333; /* Border around inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
